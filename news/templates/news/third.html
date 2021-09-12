@@ -1,0 +1,24 @@
+{% extends 'news/main.html' %}
+
+{% block body %}
+<div class="header" style="display:flex;justify-content:center;text-align:centerl">
+    <h1> Top Business Headlines from Germany</h1>
+    <div class="b">
+        <a href="{% url 'fourth' %}"><button class="btn btn-success mx-4 my-2">Change</button></a>
+    </div>
+</div>
+<div class="container my-4">
+    
+<div class="g" style="width:1000px; margin:0 auto;">
+    {% for i in image %}
+    
+    <div class="item">
+        <img src="{{i}}" class="img-fluid">
+    </div>
+    {% endfor %} 
+</div>
+  </div>
+
+
+
+{% endblock %}
